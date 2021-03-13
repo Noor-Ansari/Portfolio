@@ -1,5 +1,5 @@
 .tech-container {
-  width: 100%;
+  width: 100vw;
   height: min-content;
   padding: 3rem;
   display: flex;

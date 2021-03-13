@@ -1,27 +1,24 @@
 .banner-image {
   height: 80vh;
-  filter: blur(4px);
+  width: 100%;
   background-image: url("../assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
 }
 
 .banner-container {
-  width: 100%;
+  width: 100vw;
 }
 
-.banner-text {
+.banner {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-weight: lighter;
+  font-weight: 900;
   border: 5px double #fff;
-  position: absolute;
-  top: 55vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 60%;
+  width: 60vw;
   padding: 16px;
   text-align: center;
   font-size: clamp(12px, 2vw, 48px);
@@ -29,15 +26,13 @@
 }
 
 @media screen and (max-width: 900px) {
-  .banner-text {
+  .banner {
     width: 80vw;
-    top: 50vh;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .banner-text {
+  .banner {
     width: 90vw;
-    top: 50vh;
   }
 }
